@@ -1,0 +1,260 @@
+/* 此公共样式文件里包括版心宽度、清除浮动、页面文字颜色等公共样式。 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.important {
+    color: #c81623;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* 顶部导航栏 */
+.top_nav_footer {
+    background-color: #f1f1f1;
+}
+
+.top_nav_footer div .loginbar li,
+.top_nav_footer div .rightnav li {
+    float: left;
+    margin: 5px 3px;
+}
+
+/* 顶部导航栏_登录 */
+.top_nav_footer div .loginbar {
+    float: left;
+}
+
+/* 顶部导航栏_我的订单...右导航 */
+.top_nav_footer div .rightnav {
+    float: right;
+    margin-right: -30px;
+}
+
+.top_nav_footer div .rightnav li:last-of-type::after {
+    border-color: transparent;
+}
+
+.top_nav_footer div .rightnav li::after {
+    content: '';
+    margin: 0 12px;
+    border-right: solid #666 .8px;
+}
+
+.top_nav_footer div .rightnav li a img {
+    width: 8px;
+    margin: -2px 0 0 10px;
+}
+
+/* 网站头部 logo、搜索栏等 */
+header {
+    position: relative;
+    height: 105px;
+}
+
+header div:nth-of-type(n) {
+    position: absolute;
+    top: 25px;
+}
+
+header .logo {
+    left: 0;
+}
+
+header .logo a img {
+    width: 171px;
+    height: 61px;
+}
+
+header div.search {
+    top: 28px;
+    left: 330px;
+}
+
+header .search form .search_area,
+header .search form .submit {
+    height: 36px;
+}
+
+header .search form .search_area {
+    width: 448px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 2px #b1191a solid;
+    outline: 0;
+}
+
+header .search form .submit {
+    width: 82px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #b1191a;
+    border: 0;
+    vertical-align: top;
+}
+
+header .search ul li {
+    float: left;
+    margin: 5px 11px;
+    font-size: 12px;
+}
+
+header .cart {
+    right: 60px;
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 7px;
+    background-color: #f7f7f7;
+    border: #dfdfdf 1px solid;
+}
+
+header .cart::after {
+    position: absolute;
+    top: -14px;
+    right: 19px;
+    content: '';
+    font-family: 'icomoon';
+    font-size: 16px;
+    color: #ee272e;
+}
+
+header .cart a::before,
+header .cart a::after {
+    font-family: 'icomoon';
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+header .cart a::before {
+    content: '';
+    color: #c81623;
+}
+
+header .cart a::after {
+    content: '';
+    color: black;
+}
+
+header .cart .num {
+    position: absolute;
+    top: -16px;
+    right: 24px;
+    z-index: 1;
+    color: #FFF;
+    font-size: 10px;
+}
+
+/* 品优购底部 */
+.web_foot {
+    margin-top: 35px;
+}
+
+/* 俺们可以做到这些 */
+.web_foot .we_can_do_these {
+    padding: 30px 0 30px 40px;
+    border-bottom: #ccc 1px solid;
+}
+
+.web_foot .we_can_do_these ul li {
+    float: left;
+    width: 180px;
+    height: 50px;
+    margin: 0 62px 0 0;
+}
+
+.web_foot .we_can_do_these ul li:nth-last-child(1) {
+    margin: 0;
+}
+
+.web_foot .we_can_do_these ul li div {
+    float: left;
+    width: 35px;
+    height: 35px;
+    /* margin-top: 12px;
+    margin-right: 5px; */
+    margin: 12px 8px 0 -8px;
+    background-image: url(../icon/miku_icon_new.png);
+    background-repeat: no-repeat;
+    background-position: -39px -1px;
+}
+
+.web_foot .we_can_do_these ul li div:hover {
+    background-position: 0px 0px;
+}
+
+.web_foot .we_can_do_these ul li h3 {
+    margin: 5px 0 5px 0;
+    font-weight: 700;
+}
+
+/* 俺们具体有啥服务？ */
+.web_foot div .what_service_we_have {
+    padding: 0 0 20px 0;
+    border-bottom: #ccc 1px solid;
+
+}
+
+.web_foot div .what_service_we_have ol {
+    float: left;
+    font-size: 14px;
+    padding: 20px 60px 0 50px;
+}
+
+.web_foot div .what_service_we_have ol li {
+    padding-bottom: 2px;
+
+}
+
+.web_foot div .what_service_we_have ol li h3 {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.web_foot div .what_service_we_have ol li img {
+    margin: 5px 0 0 -3px;
+}
+
+/* 品优购最底部，一系列链接以及公司信息 */
+.web_foot div .about_us .contact_us {
+    margin: 10px 0 10px 20px;
+}
+
+.web_foot div .about_us .contact_us li {
+    float: left;
+}
+
+.web_foot div .about_us .contact_us li a h4 {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: #ccc solid 1px;
+}
+
+.web_foot div .about_us .contact_us li:nth-last-child(1) a h4 {
+    border: 0;
+}
+
+/* 网站最底部中的公司信息板块 */
+.web_foot div .about_us .com_info {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.web_foot div .about_us .com_info p {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+}

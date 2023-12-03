@@ -1,0 +1,158 @@
+/* 网页头部 logo旁的“秒杀”字样 */
+header .logo::after {
+    content: '';
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+    border-left: #ee272e 2px solid;
+    margin-left: 15px;
+    background-image: url(../images/buy_now.png);
+    background-repeat: no-repeat;
+    background-size: 750%;
+    background-position: 8px -5px;
+    vertical-align: middle;
+}
+
+/* 版心头部的所有商品分类设置高度 */
+.nav_of_product_list {
+    color: #FFF;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav_of_product_list .products_nav .event li a h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #020202;
+    margin: 0 25px;
+}
+
+.nav_of_product_list .products_nav .event li a h2,
+.nav_of_product_list .products_nav ul li a h3 {
+    float: left;
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.nav_of_product_list .products_nav:nth-last-child(1) li:nth-last-of-type(1) a h3::after {
+    content: '';
+    font-family: 'icomoon';
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* 版心部分 女鞋区海报 */
+.bg_of_content {
+    background-image: url(../images/banner1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #020202;
+    padding: 25px 0 25px 0;
+}
+
+.bg_of_content .women_shoes img {
+    width: 28px;
+    vertical-align: text-bottom;
+}
+
+.bg_of_content .women_shoes h2 {
+    display: inline-block;
+    margin: 5px 0 10px 0;
+    font-weight: 700;
+}
+
+/* 版心部分 女鞋区商品列表 */
+.content_of_products {
+    margin-top: 20px;
+    margin-bottom: 400px;
+}
+
+.content_of_products .product_show li {
+    float: left;
+    width: 288px;
+    margin-right: 10px;
+}
+
+.content_of_products .product_show li .box {
+    padding: 10px;
+}
+
+.content_of_products .product_show li .box:hover {
+    position: relative;
+    border: #c81623 1px solid;
+    border-bottom: 0;
+    z-index: 1;
+}
+
+.content_of_products .product_show li:nth-child(4n):hover .box {
+    margin-left: -1px;
+}
+
+/* 商品图片 */
+.content_of_products .product_show li .pro_pic img {
+    width: 100%;
+}
+
+.content_of_products .product_show li .pro_price {
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+}
+
+/* 商品折扣价 */
+.content_of_products .product_show li .pro_price h2 {
+    float: left;
+    margin-right: 5px;
+}
+
+/* 商品折扣前价格 */
+.content_of_products .product_show li .pro_price h4 {
+    padding-top: 2px;
+    text-decoration: line-through;
+}
+
+/* 商品售卖进度条 */
+.content_of_products .product_show li .sold .loading {
+    display: inline-block;
+    overflow: hidden;
+    width: 148px;
+    height: 10px;
+    line-height: 9px;
+    margin: 0 8px;
+    border: 1px solid #ee272e;
+    border-radius: 5px;
+}
+
+.content_of_products .product_show li .sold .loading::before {
+    content: '';
+    display: inline-block;
+    width: 64%;
+    height: 100%;
+    background-color: #ee272e;
+}
+
+.content_of_products .product_show li .sold:hover .loading::before {
+    width: 100%;
+    transition: 1.2s width;
+}
+
+.content_of_products .product_show li .sold .number {
+    color: #ee272e;
+    font-size: 14px;
+}
+
+/* 立即抢购按钮 */
+.content_of_products .product_show li .buy_now {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #b1191a;
+}

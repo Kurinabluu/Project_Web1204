@@ -1,0 +1,311 @@
+/* 版心，所有商品分类栏 */
+.nav_of_content .all_types_goods {
+    width: 209px;
+    height: 512px;
+}
+
+/* 版心头部的所有商品分类设置高度以及底部边框 */
+.nav_of_content {
+    color: #FFF;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav_of_content h2 {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 25px;
+}
+
+.nav_of_content .goods_nav ul li:nth-child(1) h2 {
+    width: 209px;
+    background-color: #b1191a;
+    margin: 0;
+}
+
+/* 品优购 浮动列表 */
+/* .float_list {
+    float: left;
+    position: sticky;
+    top: 0;
+    margin-left: 14%;
+} */
+
+/* 版心顶部下方商品列表 */
+.content .content_top .all_types_goods {
+    float: left;
+}
+
+.content .content_top .all_types_goods ul {
+    height: 465px;
+    font-size: 14px;
+    background-color: #c81623;
+}
+
+.content .content_top .all_types_goods ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+}
+
+.content .content_top .all_types_goods ul li::after {
+    position: absolute;
+    right: 10px;
+    font-family: 'icomoon';
+    content: '';
+    color: #FFF;
+    font-size: 18px;
+}
+
+.content .content_top .all_types_goods ul li a {
+    display: inline-block;
+    width: 209px;
+    height: 100%;
+    padding-left: 10px;
+    color: #FFF;
+}
+
+.content .content_top .all_types_goods ul li a:hover {
+    color: #c81623;
+    background-color: #fff;
+    transition: .5s;
+}
+
+/* 版心海报部分 */
+.content .content_top .main_pic,
+.content .content_top .main_pic img {
+    width: 720px;
+    height: 455px;
+}
+
+.content .content_top .main_pic {
+    float: left;
+}
+
+/* 设置版心主海报、右侧品优购快报以及下方小广告之间的间距 */
+.content .content_top .main_pic,
+.content .content_top .news_box {
+    margin: 10px 0 0 10px;
+}
+
+/* 版心右侧，品优购快报上部 */
+.content .content_top .news_box {
+    float: right;
+    width: 250px;
+    border: #ccc solid 1px;
+}
+
+.content .content_top .news_box .news_head {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    border-bottom: #ccc dashed 1px;
+}
+
+.content .content_top .news_box .news_head h3 {
+    display: inline-block;
+}
+
+.content .content_top .news_box .news_head .more {
+    float: right;
+}
+
+.content .content_top .news_box .news_head .more a::after {
+    content: '';
+    font-family: 'icomoon';
+    margin-left: 3px;
+}
+
+/* 品优购版心右侧：品优购快报中部的图标栏 */
+.content .content_top .news_box .news_func .news {
+    padding: 10px 0 5px 15px;
+}
+
+.content .content_top .news_box .news_func .news li {
+    height: 23px;
+    line-height: 23px;
+}
+
+.content .content_top .news_box .news_func .news li h5 a span {
+    font-weight: 700;
+}
+
+/* “减”绿图标 */
+.content .content_top .news_box .news_func .func li:nth-child(2)::before {
+    position: absolute;
+    top: -9px;
+    right: -6px;
+    content: '';
+    font-size: 24px;
+    font-family: 'icomoon';
+    color: #509f58;
+}
+
+.content .content_top .news_box .news_func .func li:nth-child(2)::after {
+    content: '减';
+    position: absolute;
+    top: -3px;
+    right: 0;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.content .content_top .news_box .news_func .func li {
+    position: relative;
+    float: left;
+    width: 62px;
+    height: 70px;
+    text-align: center;
+    border-top: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    background-image: url(../icon/icons.png);
+    background-repeat: no-repeat;
+    background-position: 2px -2px;
+}
+
+.content .content_top .news_box .news_func .func li div {
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    top: 45px;
+}
+
+.content .content_top .news_box .news_func .func li:nth-child(4n) {
+    border-right: 0;
+}
+
+/* 品优购版心右侧：品优购快报板块下方的小广告 */
+.content .content_top .sub_pic,
+.content .content_top .sub_pic img {
+    width: 250px;
+    height: 75px;
+}
+
+.content .content_top .sub_pic {
+    float: left;
+    margin: 5px 0 0 11px;
+}
+
+/* 品优购版心 今日推荐板块 */
+.content .today_best {
+    margin: 15px 0 20px 0;
+}
+
+.content .today_best .today_best_icon,
+.content .today_best ul,
+.content .today_best ul li {
+    float: left;
+}
+
+.content .today_best .today_best_icon {
+    position: relative;
+    width: 208px;
+    height: 163px;
+    color: #FFF;
+    background-color: #5c5251;
+}
+
+.content .today_best .today_best_icon img,
+.content .today_best .today_best_icon h2 {
+    position: absolute;
+    left: 102px;
+}
+
+.content .today_best .today_best_icon img {
+    top: 78px;
+    margin-top: -37px;
+    margin-left: -27px;
+}
+
+.content .today_best .today_best_icon h2 {
+    top: 103px;
+    margin-left: -34px;
+}
+
+.content .today_best ul li {
+    width: 248px;
+    height: 160px;
+}
+
+/* 品优购版心 猜你喜欢板块 */
+.content .maybe_you_like .head_of_maybe_you_like h2,
+.content .maybe_you_like .proc_list li {
+    float: left;
+}
+
+.content .maybe_you_like .head_of_maybe_you_like {
+    margin-bottom: 5px;
+}
+
+.content .maybe_you_like .head_of_maybe_you_like h2 {
+    font-weight: 700;
+}
+
+.content .maybe_you_like .head_of_maybe_you_like span {
+    float: right;
+}
+
+.content .maybe_you_like .head_of_maybe_you_like span::after {
+    content: '';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.content .maybe_you_like .proc_list {
+    border: #ccc 1px solid;
+}
+
+.content .maybe_you_like .proc_list li {
+    position: relative;
+    width: 199px;
+    height: 230px;
+}
+
+.content .maybe_you_like .proc_list li a:hover {
+    text-decoration: underline;
+}
+
+.content .maybe_you_like .proc_list li a img,
+.content .maybe_you_like .proc_list li a .proc_info {
+    position: absolute;
+    width: 60%;
+    left: 60%;
+    margin-left: -39%;
+}
+
+.content .maybe_you_like .proc_list li a img {
+    top: 50%;
+    margin-top: -45%;
+    height: 50%;
+}
+
+.content .maybe_you_like .proc_list li a:hover div {
+    display: block;
+}
+
+.content .maybe_you_like .proc_list li a .proc_info {
+    top: 64%;
+    width: 80%;
+    border-right: #ccc 1px solid;
+}
+
+.content .maybe_you_like .proc_list li:nth-last-child(1) a .proc_info {
+    border: 0;
+}
+
+.content .maybe_you_like .proc_list li a .proc_info .proc_name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 120px;
+    height: 39px;
+}
+
+.content .maybe_you_like .proc_list li a .proc_info .proc_price {
+    color: #c81623;
+    font-weight: 700;
+}
